@@ -1,0 +1,21 @@
+/// FIXED BACKGROUND
+/// manages the background settings
+/// so we can use them without punishment in multiple locations
+/// @access public
+/// @author aepicos
+
+@mixin fixed-background {
+  background: {
+    image: url($_background-image_url);
+    position: center center;
+    repeat: no-repeat;
+  }
+
+  @media (orientation: portrait) {
+    background-size: auto 100vh;
+  }
+
+  @media (orientation: landscape) {
+    background-size: 100vw auto;
+  }
+}
