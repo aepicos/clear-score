@@ -6,7 +6,7 @@
 
 @mixin fixed-background {
   background: {
-    image: url($_background-image_url);
+    image: url($_background_image_url);
     position: center center;
     repeat: no-repeat;
   }

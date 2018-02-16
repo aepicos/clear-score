@@ -32,9 +32,13 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss">
+  @import '~scss/globals';
+  @import '~scss/reset';
+</style>
+
 <style lang="scss" scoped>
-  @import "~scss/global";
+  @import '~scss/globals';
 
   main {
     @include flex-center(column);
