@@ -11,10 +11,7 @@ export default {
   name: 'ClearScore',
   data () {
     return {
-      creditInfo: '',
-      score: '',
-      maxScoreValue: '',
-      minScoreValue: ''
+      creditInfo: ''
     }
   },
 
