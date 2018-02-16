@@ -1,5 +1,6 @@
-
+// GLOBAL SETTINGS
+$_score_color: #587c93 !default;
 $_background-image_url: '../assets/img/zen-pebbles.jpg' !default;
 
-//@import 'mixins/flex-center';
-//@import 'mixins/fixed-background';
+@import 'mixins/flex-center';
+@import 'mixins/fixed-background';

@@ -34,5 +34,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  @import "~scss/_global.scss";
+  @import "~scss/global";
+
+  main {
+    @include flex-center(column);
+    @include fixed-background;
+
+    min-height: 100vh;
+  }
 </style>

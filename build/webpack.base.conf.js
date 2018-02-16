@@ -36,6 +36,8 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      // the following alias allows us to use global sass
+      // without worrying about the brittleness of absolute urls
       'scss': path.resolve(__dirname, '../src/assets/scss')
     }
   },
