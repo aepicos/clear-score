@@ -1,8 +1,11 @@
 // GLOBAL SETTINGS
-$_default_font_family: Avenir, Helvetica, Arial, sans-serif !default;
+$_default_font_family: Quicksand, Avenir, Helvetica, Arial, sans-serif !default;
 
 $_score_color: #587c93 !default;
 $_background_image_url: '../assets/img/zen-pebbles.jpg' !default;
+
+$_score_color: #62ACCD;
+$_background_image_url: '../assets/img/mountain-range.jpg';
 
 @import 'mixins/flex-center';
 @import 'mixins/fixed-background';

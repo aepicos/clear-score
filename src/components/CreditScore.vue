@@ -78,8 +78,13 @@ export default {
       opacity: 0;
     }
 
+    &--label,
     &--max-score {
-      color: rgba($_score_color, 0.5);
+      color: white; // rgba($_score_color, 0.5);
+      font: {
+        size: 1.1rem;
+        weight: 700;
+      }
     }
   }
 </style>
