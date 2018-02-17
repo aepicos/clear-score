@@ -64,10 +64,6 @@ export default {
   .credit-score {
     @include flex-center(column);
 
-    &--label {
-
-    }
-
     &--score {
       color: $_score_color;
       font: {
