@@ -24,12 +24,16 @@ export default {
   @import '~scss/globals';
 
   .main-dial {
+    $dial-diameter: 80vmin;
+    $dial-max-diameter: 400px;
+    $dial-accent-color: #fff;
+
     @include flex-center(column);
 
-    width: 80vmin;
-    height: 80vmin;
-    max-width: 400px;
-    max-height: 400px;
+    width: $dial-diameter;
+    height: $dial-diameter;
+    max-width: $dial-max-diameter;
+    max-height: $dial-max-diameter;
     position: relative;
     z-index: 10;
     border-radius: 50%;
@@ -48,6 +52,7 @@ export default {
 
     &::before {
       @include fixed-background;
+
       z-index: -2;
       -webkit-filter: blur(10px);
               filter: blur(10px);
@@ -55,26 +60,8 @@ export default {
 
     &::after {
       z-index: -1;
-      background-color: rgba(white, 0.2);
-      border: 1px solid rgba(white, 0.5);
-    }
-
-    &--graph {
-      width: calc(100% - 0.6rem);
-      height: calc(100% - 0.6rem);
-      position: absolute;
-      top: 0.3rem;
-      left: 0.3rem;
-
-      &-path {
-        fill: transparent;
-        stroke: $_score_color;
-        stroke: {
-          linecap: round;
-          width: 0.4rem;
-        }
-        opacity: 0;
-      }
+      background-color: rgba($dial-accent-color, 0.2);
+      border: 1px solid rgba($dial-accent-color, 0.5);
     }
 
     &--score {
