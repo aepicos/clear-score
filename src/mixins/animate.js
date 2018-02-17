@@ -10,6 +10,7 @@ export const animate = {
       i.e.: an easeIn function becomes an easeOut function
       @author https://github.com/iliakan
       @param {function} easing - the original easing function
+      @returns {number} - an inverted animation progress state
     */
     invertEasing: function (easing) {
       return function (timeFraction) {
@@ -18,10 +19,22 @@ export const animate = {
     },
 
     /**
+      @function arcEase
+      an easing function following a circular arc
+      @author https://github.com/iliakan
+      @param {number} timeFraction - the current point in time of the animation sequence
+      @returns {number} - animation progress state
+    */
+    arcEase: function (timeFraction) {
+      return 1 - Math.sin(Math.acos(timeFraction));
+    },
+
+    /**
       @function bounceEase
       an easing function that bounces in the beginning
       @author https://github.com/iliakan
       @param {number} timeFraction - the current point in time of the animation sequence
+      @returns {number} - animation progress state
     */
     bounceEase: function (timeFraction) {
       for (let a = 0, b = 1; 1; a += b, b /= 2) {
@@ -36,6 +49,7 @@ export const animate = {
       an easing function following a parabolic curve
       @author https://github.com/iliakan
       @param {number} timeFraction - the current point in time of the animation sequence
+      @returns {number} - animation progress state
     */
     quadEase: function (timeFraction) {
       return Math.pow(timeFraction, 2)

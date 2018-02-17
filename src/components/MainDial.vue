@@ -1,21 +1,21 @@
 <template>
   <div class="main-dial">
     <circular-graph :score="creditInfo"></circular-graph>
-
-    <h1 class="main-dial--score">{{ creditInfo.score }}</h1>
-    <h4 class="main-dial--max-score">out of {{ creditInfo.maxScoreValue }}</h4>
+    <credit-score :score="creditInfo"></credit-score>
   </div>
 </template>
 
 <script>
 import CircularGraph from './CircularGraph.vue'
+import CreditScore from './CreditScore.vue'
 
 export default {
 
   props: ['creditInfo'],
 
   components: {
-    CircularGraph
+    CircularGraph,
+    CreditScore
   }
 }
 </script>
@@ -28,7 +28,7 @@ export default {
     $dial-max-diameter: 400px;
     $dial-accent-color: #fff;
 
-    @include flex-center(column);
+    @include flex-center();
 
     width: $dial-diameter;
     height: $dial-diameter;
@@ -38,6 +38,7 @@ export default {
     z-index: 10;
     border-radius: 50%;
 
+    // the ::before and ::after elements create the frosted effect
     &::before,
     &::after {
       content: '';
@@ -62,19 +63,6 @@ export default {
       z-index: -1;
       background-color: rgba($dial-accent-color, 0.2);
       border: 1px solid rgba($dial-accent-color, 0.5);
-    }
-
-    &--score {
-      color: $_score_color;
-      font: {
-        size: 16vmin;
-        weight: 100;
-      }
-      line-height: 1;
-    }
-
-    &--max-score {
-      color: rgba($_score_color, 0.5);
     }
   }
 </style>
