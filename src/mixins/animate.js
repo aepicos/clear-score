@@ -26,7 +26,7 @@ export const animate = {
       @returns {number} - animation progress state
     */
     arcEase: function (timeFraction) {
-      return 1 - Math.sin(Math.acos(timeFraction));
+      return 1 - Math.sin(Math.acos(timeFraction))
     },
 
     /**
