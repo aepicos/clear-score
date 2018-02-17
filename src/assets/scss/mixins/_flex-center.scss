@@ -1,7 +1,7 @@
 /// FLEX CENTER
-/// @access public
-/// @author aepicos
-
+/// uses flexbox to center content and align it
+/// (used to be sooo difficult before flexbox!)
+/// @param {column | row} $direction [row]
 @mixin flex-center($direction: row) {
   display: flex;
   flex-direction: $direction;

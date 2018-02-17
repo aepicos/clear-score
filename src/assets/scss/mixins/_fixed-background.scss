@@ -1,9 +1,6 @@
 /// FIXED BACKGROUND
 /// manages the background settings
 /// so we can use them without punishment in multiple locations
-/// @access public
-/// @author aepicos
-
 @mixin fixed-background {
   background: {
     image: url($_background_image_url);
