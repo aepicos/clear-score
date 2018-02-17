@@ -1,5 +1,5 @@
 <template>
-  <main role="main">
+  <main role="main" class="clear-score">
     <main-dial :creditInfo="creditInfo"></main-dial>
   </main>
 </template>

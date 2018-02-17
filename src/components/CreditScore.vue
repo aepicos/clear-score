@@ -10,6 +10,7 @@
 import {animate} from '../mixins/animate'
 
 export default {
+  name: 'CreditScore',
   mixins: [animate],
   props: ['score'],
 

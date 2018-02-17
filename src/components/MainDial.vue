@@ -10,7 +10,7 @@ import CircularGraph from './CircularGraph.vue'
 import CreditScore from './CreditScore.vue'
 
 export default {
-
+  name: 'MainDial',
   props: ['creditInfo'],
 
   components: {

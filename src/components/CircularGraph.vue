@@ -8,6 +8,7 @@
 import {animate} from '../mixins/animate'
 
 export default {
+  name: 'CircularGraph',
   mixins: [animate],
   props: ['score'],
 
