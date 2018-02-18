@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 300 300" class="circular-graph">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300" class="circular-graph">
     <path  class="circular-graph--path" d="M150,6c78.5,0,144,65.5,144,144s-65.5,144-144,144S6,228.5,6,150 S71.5,6,150,6z" />
   </svg>
 </template>
@@ -93,7 +93,7 @@ export default {
       stroke: $_score_color;
       stroke: {
         linecap: round;
-        width: 0.4rem;
+        width: 4;
       }
       opacity: 0;
     }

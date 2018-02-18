@@ -143,4 +143,4 @@ npm run build
     - [ ] score showing correct number
     - [ ] max-score showing correct number
 
-- [ ] fix CircularGraph path width on iOS (where it is only 1px wide)
+- [x] fix CircularGraph path width on iOS (where it is only 1px wide)
