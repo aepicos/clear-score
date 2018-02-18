@@ -67,9 +67,9 @@ I am a designer first and approach most tasks visually and then create code to u
 
 So I approached the task from the user side, looking at the dial on my ClearScore page I broke it down to the following issues to consider:
 
-1. Blurring the background image inside the dial ("frosting")
-2. Animating the circular graph to a point relative to a maximum score - both passed from data
-3. Animating the score to an integer (passed by the data) - not required by the task
+- Blurring the background image inside the dial ("frosting")
+- Animating the circular graph to a point relative to a maximum score - both passed from data
+- Animating the score to an integer (passed by the data) - not required by the task
 
 ### Choice of framework
 
