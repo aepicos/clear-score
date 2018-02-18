@@ -1,6 +1,12 @@
 # Vue my ClearScore
 
-> A test
+> A task for ClearScore.com written in Vue
+
+## TL;DR
+
+This demo replicates the ClearScore animated credit score dial, built according to task sheet from ClearScore.
+
+A live demo is available here: [http://aepicos.com/clear-score/](http://aepicos.com/clear-score/)
 
 ## Task
 
