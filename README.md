@@ -132,7 +132,7 @@ npm run build
 
 ## Todos
 
-- #### fix testing
+- [ ] #### fix testing
   - [ ] write unit test for ClearScore
     - [ ] data received
   - [ ] write unit test for CircularGraph
