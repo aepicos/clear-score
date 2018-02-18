@@ -16,7 +16,24 @@ npm run dev
 npm run build
 ```
 
-A live demo is available here: <http://aepicos.com/clear-score/>
+### A live demo is available here: <http://aepicos.com/clear-score/>
+
+```
+                                 R2 says the chances of this working
+                           /~\   are 725... to 1!
+                          (O O) _/
+                          _\=/_
+          ___            /  _  \
+         / ()\          //|/.\|\\
+       _|_____|_       ||  \_/  ||
+      | | === | |      || |\ /| ||
+      |_|  O  |_|       # \_ _/ #
+       ||  O  ||          | | |
+       ||__*__||          | | |
+      |~ \___/ ~|         []|[]
+      /=\ /=\ /=\         | | |
+      [_] [_] [_]        /_] [_\
+```
 
 ## Task
 
