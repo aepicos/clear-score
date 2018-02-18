@@ -1,5 +1,20 @@
 <template>
   <div class="main-dial">
+
+    <!--
+      the main dial contains multiple 'pages' on the ClearScore website
+      so the correct layout of this component should be:
+        <main-dial>
+          <main-dial--content>
+            <circular-graph />
+            <credit-score />
+          </main-dial--content>
+          <main-dial--content> ... </main-dial--content>
+          <main-dial--content> ... </main-dial--content>
+          ... etc ...
+        </main-dial>
+    -->
+
     <circular-graph :score="creditInfo"></circular-graph>
     <credit-score :score="creditInfo"></credit-score>
   </div>
@@ -38,7 +53,10 @@ export default {
     z-index: 10;
     border-radius: 50%;
 
-    // the ::before and ::after elements create the frosted effect
+    // frosted effect below
+    // one pseudo element to blur
+    // one pseudo element for a semi-transparent layer
+    //   (which looks better than lightening with a filter)
     &::before,
     &::after {
       content: '';
