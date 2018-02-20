@@ -14,6 +14,8 @@ npm install
 npm run dev
 # or
 npm run build
+# or
+npm run unit
 ```
 
 ### A live demo is available here: <http://aepicos.com/clear-score/>
@@ -73,7 +75,7 @@ So I approached the task from the user side, looking at the dial on my ClearScor
 
 ### Choice of framework
 
-I choice to write the task in Vue.js through the Vue-CLI, because
+I chose to write the task in Vue.js through the Vue-CLI, because
 - I have some experience with Vue and Ember, but none with Angular 4 or React
 - I'd rather do a good task than learn a new framework and deliver a half-baked result
 - Vue is more light-weight, less verbose and less opinionated than Ember
@@ -127,11 +129,9 @@ Animating the score was not part of the task, but I think it works well in conju
 
 ### Testing
 
-*A complete and abject failure!*
+~~A complete and utter failure!~~
 
-I tried to write various _unit tests_ in Karma, but did not manage to get any of them to run. I have spent hours searching "the Google", but it hasn’t been very forthcoming with a solution.
-
-I have come to the understanding that my components fail to _mount_. But even when copying the simplest of test (included in the default project and works) and converting it to one of my components (`CreditScore.spec.js`), it fails...
+This is a work in progress. I have never written unit tests in Mocha and it is currently hard going. I am currently ploughing the depths of Stack Overflow to figure out how to defer a test until the animation has finished...
 
 I will get this. I will not give up. There _will_ be test coverage.
 
@@ -146,6 +146,9 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+#run unit tests
+npm run unit
 ```
 
 ## Todos
@@ -159,6 +162,6 @@ npm run build
   - [ ] write unit test for CreditScore
     - [ ] data received
     - [ ] score showing correct number
-    - [ ] max-score showing correct number
+    - [x] max-score showing correct number
 
 - [x] fix CircularGraph path width on iOS (where it is only 1px wide)

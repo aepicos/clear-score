@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '~scss/globals';
+  @import '~scss/_globals.scss';
 
   .main-dial {
     $dial-diameter: 80vmin;
