@@ -166,3 +166,5 @@ npm run unit
     - [x] max-score showing correct number
 
 - [x] fix CircularGraph path width on iOS (where it is only 1px wide)
+
+- [ ] extract the data call to autonomous service
