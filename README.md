@@ -21,7 +21,8 @@ npm run unit
 ### A live demo is available here: <http://aepicos.com/clear-score/>
 
 ```
-                                 R2 says the chances of this working
+                                 R2 says the chances
+                                 of this working
                            /~\   are 725... to 1!
                           (O O) _/
                           _\=/_
@@ -65,9 +66,9 @@ What we're looking for
 
 ## My approach
 
-I am a designer first and approach most tasks visually and then create code to underpin the designs and interactions second.
+I am a designer, who can code - rather than a coder, who can design - so I approach tasks visually. I think about what the user sees and interacts with and then create code to underpin that.
 
-So I approached the task from the user side, looking at the dial on my ClearScore page I broke it down to the following issues to consider:
+Looking at the dial on my ClearScore page I broke it down to the following issues to consider:
 
 - Blurring the background image inside the dial ("frosting")
 - Animating the circular graph to a point relative to a maximum score - both passed from data
